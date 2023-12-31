@@ -32,11 +32,11 @@ const App= () => {
   return (
     <div className = "app">
          <div className="game">
-             {currentColorArrangement.map((candyColor, index:number) =>
+             {currentColorArrangement.map((candyColor, index) =>
              <img
-                 key={{index}
+                 key={index}
                  style={{backgroundColor: candyColor}}
-                 >
+                 />
              )}
          </div>
     </div>
